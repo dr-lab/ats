@@ -5,6 +5,8 @@ MAINTAINER Huaping Gu <humphrey.gu@gmail.com>
 RUN apt-get update
 RUN apt-get install -y wget
 RUN apt-get install -y curl
+RUN apt-get install -y libcurl4-openssl-dev
+RUN apt-get install -y libncurses5-dev
 RUN wget http://mirror.metrocast.net/apache/trafficserver/trafficserver-5.2.0.tar.bz2
 
 RUN tar -xvf trafficserver-5.2.0.tar.bz2
@@ -25,9 +27,8 @@ RUN make check
 
 RUN sudo make install
 
-#RUN /opt/ats/bin/trafficserver start
+RUN /opt/ats/bin/trafficserver start
 
 EXPOSE 8080 
 
 ENTRYPOINT /opt/ats/bin/trafficserver start
-
