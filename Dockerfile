@@ -1,6 +1,6 @@
 FROM ubuntu:latest
 
-MAINTAINER Huaping Gu <hpgu@apple.com>
+MAINTAINER Huaping Gu <humphrey.gu@gmail.com>
 
 RUN apt-get update
 RUN apt-get install -y wget
