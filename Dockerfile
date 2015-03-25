@@ -30,5 +30,5 @@ RUN sudo make install
 RUN /opt/ats/bin/trafficserver start
 
 EXPOSE 8080 
-
+#
 #CMD ["/opt/ats/bin/trafficserver", "start"]
