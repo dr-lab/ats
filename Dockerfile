@@ -31,4 +31,4 @@ RUN /opt/ats/bin/trafficserver start
 
 EXPOSE 8080 
 
-ENTRYPOINT /opt/ats/bin/trafficserver start
+CMD ["/opt/ats/bin/trafficserver", "start"]
