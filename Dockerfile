@@ -27,7 +27,6 @@ RUN make check
 
 RUN sudo make install
 
-RUN /opt/ats/bin/trafficserver start
 
 EXPOSE 8080 
 #
