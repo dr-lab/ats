@@ -10,9 +10,7 @@
 https://docs.docker.com/
 * Start ATS<br>
   On host OS: <br>
-```Bash 
-docker exec -it ats /opt/ats/bin/trafficserver start
-``` <br>
+  ```docker exec -it ats /opt/ats/bin/trafficserver start``` <br>
   In container: <br>
     ```docker run -ti -p 17070:8080 --name ats guhuaping/ats  /bin/bash```
 
