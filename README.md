@@ -25,11 +25,13 @@ https://docs.docker.com/
 
 ##Verification
 * Check port mapping is correct, the hit ATS HTTP  
-```docker port ats``` <br>
-  8080/tcp -> 0.0.0.0:17070 <br><br>
-```http://host_ip:17070```
-<br>
-If use all default settings, you will see "Not Found on Accelerator" error message. That means ATS started, but configuration is not finished, check records.config, remap.config and others. 
+  ```docker port ats``` 
+  <br>
+        8080/tcp -> 0.0.0.0:17070 
+  <br><br>
+        ```http://host_ip:17070```
+  <br>
+  If use all default settings, you will see "Not Found on Accelerator" error message. That means ATS started, but configuration is not finished, check records.config, remap.config and others. 
 * use ```traffic_top, traffic_logstats and traffic_logcat```, check status and logs.
 
 
