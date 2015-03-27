@@ -25,5 +25,6 @@ https://docs.docker.com/
 
 ##Note
 This is for ATS test only, do not use in Production.
-
+If user want to mount host directory by ```-v /SHARED_ATS_CONFIG/:/opt/at/etc/trafficserver```, make sure in records.config the port = 8080<br>
+```proxy.config.http.server_ports 8080``` 
 
