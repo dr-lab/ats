@@ -35,4 +35,4 @@ RUN sudo make install
 #use default ATS port
 EXPOSE 8080 
 
-CMD ["/opt/ats/bin/trafficserver"]
+#CMD ["/opt/ats/bin/trafficserver"]
